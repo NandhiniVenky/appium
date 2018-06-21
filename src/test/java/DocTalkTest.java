@@ -7,8 +7,8 @@ public class DocTalkTest {
 	DocTalkCommon tc = new DocTalkCommon();
 	
 	@BeforeTest
-	@Parameters({"deviceObjectName","bootStrapPort","URL"})
-	public void launchApp(@Optional("Android1")String deviceObjectName,@Optional("5789")int bootStrapPort)throws Exception{
+	@Parameters({"deviceObjectName","bootStrapPort"})
+	public void launchApp(@Optional("android1")String deviceObjectName,@Optional("5789")int bootStrapPort)throws Exception{
 		tc.setUp();
 	}
 	@Test(priority = 0)

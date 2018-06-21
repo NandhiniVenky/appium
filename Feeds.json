@@ -1,0 +1,71 @@
+{
+
+
+"Generic": {
+	"NODE_PATH": "/usr/local/Cellar/node/7.5.0/bin/node", 
+	"APPIUM_PATH": "/usr/local/lib/node_modules/appium/build/lib/main.js",
+	"ipAddress": "127.0.0.1",
+    "OS": "Mac",
+	"runfromNode": "true"
+},
+
+"Appium_AUT": {     
+
+          "Android": {         
+                      "AndroidMobile": {                     
+										"Android1": {
+										"deviceName": "android",
+										"platformName": "android",
+										"automationName": "Appium",
+										"appPackage": "com.getdoctalk.doctalk.app.patient.debug",
+										"appActivity": "com.getdoctalk.doctalk.app.patient.onboarding.intro.OnBoardingIntroActivity",
+										"udid":"emulator-5554",
+										"ipAddress": "127.0.0.1",
+										"logfilePath": "/log1.txt",
+										"newCommandTimeout":"120"
+										},
+
+										"Android2": {
+										"deviceName": "android",
+										"platformName": "android",
+										"automationName": "Appium",
+										"appPackage": "com.getdoctalk.doctalk.app.patient.debug",
+										"appActivity": "com.getdoctalk.doctalk.app.patient.onboarding.intro.OnBoardingIntroActivity",
+										"udid":"emulator-5556",
+										"ipAddress": "127.0.0.2",
+										"logfilePath": "/log2.txt",
+										"newCommandTimeout":"120"
+										},
+										
+										"Android3": {
+										"deviceName": "Android",
+										"platformName": "android",
+										"automationName": "Appium",
+										"appPackage": "com.getdoctalk.doctalk.app.patient.debug",
+										"appActivity": "com.getdoctalk.doctalk.app.patient.onboarding.intro.OnBoardingIntroActivity",
+										"udid":"emulator-5558",
+										"ipAddress": "127.0.0.3",
+										"logfilePath": "/log3.txt",
+										"newCommandTimeout":"120"
+										},
+										
+										"Android4": {
+										"deviceName": "Android",
+										"platformName": "android",
+										"automationName": "Appium",
+										"appPackage": "com.getdoctalk.doctalk.app.patient.debug",
+										"appActivity": "com.getdoctalk.doctalk.app.patient.onboarding.intro.OnBoardingIntroActivity",
+										"udid":"emulator-5560",
+										"ipAddress": "127.0.0.4",
+										"logfilePath": "/log4.txt",
+										"newCommandTimeout":"120"
+										}
+
+                                  
+                         			  },
+                         
+                      
+                      
+       }
+       }
+       }

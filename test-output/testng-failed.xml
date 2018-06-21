@@ -1,14 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="DocTalkTest(failed)">
-    <parameter name="reproName" value="vikramvi/AppiumSerenityPOC"/>
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="LoginUserFlow(failed)" parallel="tests">
+    <parameter name="deviceObjectName" value="Android1"/>
+    <parameter name="bootStrapPort" value="5554"/>
     <classes>
-      <class name="DocTalkTest">
+      <class name="com.docTalk.LoggedInUser.LoginUserTest">
         <methods>
-          <include name="enterValue" invocation-numbers="0"/>
+          <include name="loginToAppUsingValidCredentials"/>
+          <include name="launchTheApp"/>
+          <include name="launchTheApp"/>
+          <include name="launchTheApp"/>
+          <include name="launchTheApp"/>
         </methods>
-      </class> <!-- DocTalkTest -->
+      </class> <!-- com.docTalk.LoggedInUser.LoginUserTest -->
     </classes>
-  </test> <!-- DocTalkTest(failed) -->
+  </test> <!-- LoginUserFlow(failed) -->
+  <test name="LoginUserFlows(failed)" parallel="tests">
+    <parameter name="deviceObjectName" value="Android3"/>
+    <parameter name="bootStrapPort" value="5558"/>
+    <classes>
+      <class name="com.docTalk.LoggedInUser.LoginUserTest">
+        <methods>
+          <include name="printSubscriptionDetailsOfPatient"/>
+          <include name="loginToAppUsingValidCredentials"/>
+          <include name="launchTheApp"/>
+          <include name="launchTheApp"/>
+          <include name="launchTheApp"/>
+          <include name="launchTheApp"/>
+        </methods>
+      </class> <!-- com.docTalk.LoggedInUser.LoginUserTest -->
+    </classes>
+  </test> <!-- LoginUserFlows(failed) -->
+  <test name="Login(failed)" parallel="tests">
+    <parameter name="deviceObjectName" value="Android4"/>
+    <parameter name="bootStrapPort" value="5560"/>
+    <classes>
+      <class name="com.docTalk.LoggedInUser.LoginUserTest">
+        <methods>
+          <include name="printSubscriptionDetailsOfPatient"/>
+          <include name="loginToAppUsingValidCredentials"/>
+          <include name="launchTheApp"/>
+          <include name="launchTheApp"/>
+          <include name="launchTheApp"/>
+          <include name="launchTheApp"/>
+        </methods>
+      </class> <!-- com.docTalk.LoggedInUser.LoginUserTest -->
+    </classes>
+  </test> <!-- Login(failed) -->
+  <test name="LoginUser(failed)" parallel="tests">
+    <parameter name="deviceObjectName" value="Android2"/>
+    <parameter name="bootStrapPort" value="5556"/>
+    <classes>
+      <class name="com.docTalk.LoggedInUser.LoginUserTest">
+        <methods>
+          <include name="printSubscriptionDetailsOfPatient"/>
+          <include name="loginToAppUsingValidCredentials"/>
+          <include name="launchTheApp"/>
+          <include name="launchTheApp"/>
+          <include name="launchTheApp"/>
+          <include name="launchTheApp"/>
+        </methods>
+      </class> <!-- com.docTalk.LoggedInUser.LoginUserTest -->
+    </classes>
+  </test> <!-- LoginUser(failed) -->
 </suite> <!-- Failed suite [Suite] -->

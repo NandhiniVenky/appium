@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" >
-  <test name="DocTalkTest">
+  <test name="Login">
     <classes>
-      <class name="DocTalkTest">
+      <class name="com.docTalk.LoggedInUser.LoginUserTest">
       <methods>
-      <include name="enterValidRepositoryName">
-      <parameter name="reproName" value="vikramvi/AppiumSerenity"></parameter>
+      <include name="loginToAppUsingValidCredentials">
       </include>
-      </methods>
-       <methods>
-      <include name="enterInvalidRepositoryName">
-      <parameter name="reproName" value="vikramvi/AppiumSerenity"></parameter>
-      </include>
-      </methods>
-       <methods>
-      <include name="enterVRandomRepositoryName">
-      <parameter name="reproName" value="gscr456"></parameter>
+      <include name="printSubscriptionDetailsOfPatient">
       </include>
       </methods>
       </class>
