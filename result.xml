@@ -3,11 +3,9 @@
 <suite name="Suite" >
   <test name="Login">
     <classes>
-      <class name="com.docTalk.LoggedInUser.LoginUserTest">
+      <class name="com.edgenetworks.automation.EdgeNetworkUtil">
       <methods>
-      <include name="loginToAppUsingValidCredentials">
-      </include>
-      <include name="printSubscriptionDetailsOfPatient">
+      <include name="loginToEdgeNetwork">
       </include>
       </methods>
       </class>
